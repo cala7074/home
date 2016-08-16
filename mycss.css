@@ -33,6 +33,14 @@
 	text-align: center;
 }
 
+.nav h1:after {
+	content: ' ';
+	width: 50px;
+	display: block;
+	border: 2px solid #fff;
+	margin: 10px auto;
+}
+
 .section-white {
 	padding: 100px;
 	overflow:auto;
@@ -41,6 +49,14 @@
 
 .section-white h2 {
 	color: rgba(35,125,170,1);
+}
+
+.section-white .title h2:after {
+	content: '';
+	width: 50px;
+	border: 2px solid rgba(35,125,170,1);
+	margin: 10px 0 20px;
+	display: block;
 }
 
 .section-white p {
@@ -55,6 +71,14 @@
 
 .section-blue h2 {
 	color: white;
+}
+
+.section-blue .title h2:after {
+	content: '';
+	width: 50px;
+	border: 2px solid white;
+	margin: 10px 0 20px;
+	display: block;
 }
 
 .section-blue p {
@@ -150,3 +174,30 @@
 .contect p {
 	margin-bottom: 10px;
 }
+
+/*********************animarion***********************/
+
+.fadeInUp {
+  animation-duration: 1s;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20% ,0);
+	   	-ms-transform: translate3d(0, 20% ,0);
+	   	-webkit-transform: translate3d(0, 20% ,0);
+	}
+
+	to {
+	   	opacity: 1;
+	   	transform: none;
+  	 	-ms-transform: none;
+   		-webkit-transform: none;
+	}
+}
+
+
+/*********************animarion***********************/
