@@ -43,7 +43,7 @@
 
 .section-white {
 	padding: 100px;
-	overflow:auto;
+	overflow:hidden;
 	background-color:white;
 }
 
