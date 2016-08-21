@@ -86,13 +86,13 @@
 }
 
 .title {
+	min-width: 160px;
 	width: 20%;
 	float: left;
 }
 
 .title h2 {
 	letter-spacing: 2px;
-	white-space:pre;
 }
 
 .title img {
@@ -196,6 +196,10 @@
 
 @media screen and (max-width:1200px) {
 
+	.title {
+		margin-bottom:20px; 
+	}
+
 	.section-white {
 		padding: 100px 30px;
 	}
@@ -217,24 +221,6 @@
 	.processbar {
 		width: 100%;
 	}
-}
-@media screen and (max-width:768px) {
-
-	.title {
-		margin-bottom:20px; 
-	}
-
-	.section-white {
-		padding: 30px;
-	}
-
-	.section-blue {
-		padding: 30px;
-	}
-
-	.section-blue h1 {
-		font-size: 50px;
-	}
 
 	.content {
 		width: 100%;
@@ -249,4 +235,20 @@
 		width: 30%;
 		height: 120px;
 	}
+
+}
+@media screen and (max-width:768px) {
+
+	.section-white {
+		padding: 30px;
+	}
+
+	.section-blue {
+		padding: 30px;
+	}
+
+	.section-blue h1 {
+		font-size: 50px;
+	}
+	
 }
