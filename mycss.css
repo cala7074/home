@@ -92,6 +92,11 @@
 
 .title h2 {
 	letter-spacing: 2px;
+	white-space:pre;
+}
+
+.title img {
+	width: 54px;
 }
 
 .content{
@@ -119,6 +124,11 @@
 	margin: 10px 0 0;
 }
 
+.box:hover {
+	background: rgba(150,200,220,0.3);
+	transition: background 0.5s;
+}
+
 .skill-col {
 	width: 50%;
 	float: left;
@@ -136,9 +146,18 @@
 	margin: 10px 0 30px;
 }
 
+.processbar:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
 .barn {
-	background-color: rgba(35,125,170,1);
+	background: linear-gradient(to right, rgba(35,125,170,1) 0%, rgba(80,170,210,1) 100%);
 	height: 100%;
+}
+.barn:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
 }
 
 .profile h2 {
@@ -173,4 +192,61 @@
 
 .contect p {
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width:1200px) {
+
+	.section-white {
+		padding: 100px 30px;
+	}
+
+	.section-blue {
+		padding: 100px 30px;
+		transition:padding 1s;
+	}
+
+	.section-blue h1 {
+		font-size: 50px;
+	}
+
+	.skill-col {
+		width: 100%;
+		transition:width 1s;
+	}
+
+	.processbar {
+		width: 100%;
+	}
+}
+@media screen and (max-width:768px) {
+
+	.title {
+		margin-bottom:20px; 
+	}
+
+	.section-white {
+		padding: 30px;
+	}
+
+	.section-blue {
+		padding: 30px;
+	}
+
+	.section-blue h1 {
+		font-size: 50px;
+	}
+
+	.content {
+		width: 100%;
+		float: both;
+	}
+
+	.skill-col {
+		width: 100%;
+	}
+
+	.profolio-col {
+		width: 30%;
+		height: 120px;
+	}
 }
